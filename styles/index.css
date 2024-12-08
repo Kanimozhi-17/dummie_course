@@ -1,0 +1,898 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Mysuru:wght@300;400;500;600;700&family=Passion+One:wght@400;700;900&family=Potta+One&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Mysuru:wght@300;400;500;600;700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Mysuru:wght@300;400;500;600;700&family=Potta+One&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Hind Mysuru", sans-serif;;  
+}
+
+.nav_bar_a_desktop{
+    display: none !important;
+
+}
+
+
+
+#nav_links{
+    display: none;
+}
+
+body{
+    
+    border: 0.4rem solid #6d7f50;
+}
+
+header, .header_section, .courses_offered, .About_section, .register_form_section{
+    margin: 1.5rem;
+}
+
+.material-symbols-outlined{
+    color: #333; 
+    font-size: 3.8rem !important;    
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_bar_side{
+    display: flex;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+h3{
+    font-family: "Potta One", system-ui;
+    font-size: 4.5rem;
+    font-weight: 100;
+}
+
+nav a{
+    color: white;
+    background-color:#718355;
+    font-size: 1.9rem;
+    border-radius: 2rem;
+    text-align: center;
+    padding: 0.6rem 1rem 0.2rem 1rem;
+}
+
+
+.nav_bar_a{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+}
+
+.nav_bar_a a{
+    text-align: right;
+    padding-right: 0.5rem;
+    width: 18rem;
+    background-color: #b5bda7;
+    color: white;
+    font-size: 1.9rem;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    
+}
+
+.nav_bar_a a:hover{
+    background-color:white;
+    color: #6d7f50;
+
+}
+
+section{
+    margin-top: 3.5rem;
+}
+
+/* first section */
+
+.header_section{
+    
+    background-color: #705ded;
+    border-radius: 2rem;
+    color: white;
+    padding: 2rem;
+
+}
+
+
+
+.header_section_words{
+    margin: 4rem;
+}
+
+.header_section h4{
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 4.5rem;
+    margin-bottom: 2rem;
+}
+
+.header_section p{
+    font-weight: 200;
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+    margin-bottom: 3rem;
+}
+
+.header_section_words button{
+    padding: 1rem 2rem 0.5rem 2rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight:300;
+    color: white;
+    background-color: transparent;
+    border: 0.2rem solid white;
+    margin-right: 3rem;
+}
+
+.header_section_words button:first-of-type{
+    background-color: white;
+    color: #705ded;
+    font-weight: 500;
+}
+
+
+.header_section img{
+    animation: headerimgae 3s linear infinite;
+}
+
+@keyframes  headerimgae{
+
+    0%{
+        transform: translateX(0);
+    }
+
+    50%{
+        transform: translateX(4rem);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+
+    
+}
+
+.courses_offered{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+    
+}
+
+
+.slied_scroll{
+    display: flex;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    gap: 3rem;
+}
+
+.slied_scroll::-webkit-scrollbar{
+    display: none;
+}
+
+.courses_offered > p{
+    font-weight: 200;
+    line-height: 1.2rem;
+    font-size: 0.8rem;
+    margin: 0rem 5rem;
+}
+
+.course_slides_content{
+    margin: 0rem 3rem !important;
+}
+
+.review_images img{
+    width: 6.5rem !important;
+    height: 6rem !important;
+    object-fit:cover !important;
+    border-radius: 50% !important;
+}
+
+.course_slides{
+    border: 2px solid #6d7f50;
+    width: 52rem;
+    border-radius: 2rem;
+    text-align: left !important;
+    color: #6d7f50;
+    margin-top: 4rem;
+}
+
+.course_slides img{
+    width: 52rem;
+    height: 30rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.start_rating{
+    color: #fecb0a;
+    font-size: 4rem !important;
+}
+
+.course_slides > div{
+    margin: 0rem;
+}
+
+.rate{
+    font-size: 1.9rem;
+}
+
+.rating_with_rate{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Rate_In_dollar span{
+    background-color: #6d7f50;
+    text-align: right;
+    padding: 0.8rem 2rem 0rem 2rem;
+    color: white;
+    font-size: 2rem;
+    border-radius: 0.4rem;
+    
+}
+
+.course_slides p{
+    line-height: 3rem;
+}
+
+.course_slides > div p:first-of-type{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.sub_heading{
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.review_images{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    margin: 3rem 0rem;
+    margin-left: 3rem;
+}
+
+
+.review_images > button{
+    margin-right: 0;
+}
+
+.review_images img{
+    margin-left: -2.7rem;
+}
+
+.review_images p{
+    margin-left: 1rem;
+    font-size: 1.9rem !important;
+    font-weight: 200 !important;
+    display: inline;
+}
+
+.review_images button{
+    background-color: #6d7f50;
+    color: white;
+    font-size: 1.9rem;
+    letter-spacing: 0.1rem;
+    padding: 1rem 3rem 0.5rem 3rem;
+    text-align: center;
+    border: none;
+}
+
+/* ---------------------------------scrollbar-------------------------------------------- */
+
+.About_section{
+    position: relative;
+}
+
+
+.About_section h4{
+    font-size: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.About_section p{
+    margin-bottom: 2rem;
+}
+
+.About_section button{
+    background-color: #6d7f50;
+    color: white;
+    font-size: 1.9rem;
+    letter-spacing: 0.1rem;
+    padding: 1rem 3rem 0.5rem 3rem;
+    text-align: center;
+    border: none;
+}
+
+
+.register_butoon_stle{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.register_butoon_stle img{
+    width: 20rem;
+    height: 20rem;
+}
+
+
+.About_section_div{
+    margin-top: 4rem;
+    background-color:#6d7f50;
+    background-image: none;
+    color: white;
+    display: flex;
+    font-size: 2.5rem;
+    text-align: center;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    padding: 1rem 0rem 0.3rem 0rem;
+    width: 100%;
+}
+
+.About_section_div p{
+    margin: 0;
+}
+
+/* -----------------------------------------------------------------------Testimonial Section */
+
+
+.testimonial_section{
+    margin-top: 10rem;
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+    background-color: #f4faed;
+}
+
+
+
+.testimonial_section h4, h6{
+    text-align: center;
+    font-size: 3rem;
+}
+
+
+.testimonial_section h6{
+    font-weight: 300;
+}
+
+.testimonial_section span:last-of-type{
+    font-size: 0.8rem;
+}
+
+
+.testimonial_section img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    object-fit:cover;
+    display: block;
+ 
+}
+
+.testimonial_section .start_rating{
+    display: block;
+    font-size: 2rem !important;
+}
+
+.review_of_students{
+    display: flex;
+    margin: 4rem 2rem;
+    gap: 4rem;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+}
+
+/* ---------------------------------------------------------------------------------fill form */
+
+.register_form_section{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+form{
+    margin-left: 1rem;
+    position: relative;
+}
+
+
+
+input[type]{
+    border: 0.2rem solid #6d7f50;
+    flex-wrap: wrap;
+    width: 15rem;
+    border-radius: 1rem;
+    margin: 2rem 1rem 0rem 0rem;
+    padding: 2rem 0rem 1rem 1.5rem;
+}
+
+input[type]::placeholder{
+    color: #6d7f50;
+    font-size: 2rem; 
+}
+
+.form_names{
+    display: flex;
+}
+
+input[type=email]{
+    width: 31rem;
+}
+
+input[type]:nth-of-type(3){
+    width: 22rem;
+    margin-left: 1.5rem;
+}
+
+.big_text{
+    width: 22rem !important;
+    margin-left: 1.5rem !important;
+}
+
+
+
+.form_split{
+    display: flex;
+}
+
+input[type=submit]{
+    background-color: #6d7f50;
+    color: white;
+    font-size: 1.8rem;
+    border-radius: 0rem;
+    text-align: center;
+    padding: 1rem 1.5rem 0.2rem 1.5rem;
+    margin-top: 4rem;
+}
+
+
+.form_submit_btn_image{
+    margin: 3rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.form_submit_btn_image_img{
+    width: 20rem;
+    height: 20rem;
+    animation: jumpmove 5s ease infinite;
+}
+
+@keyframes jumpmove {
+    0%{
+        transform: translateY(1rem) translateX(1.5rem);
+        opacity: 1;
+    }
+    10%{
+        transform: translateY(0rem) translateX(3rem);
+        opacity: 1;
+    }
+    20%{
+        transform: translateY(1rem) translateX(5rem);
+        opacity: 1;
+    }
+    30%{
+        transform: translateY(0rem) translateX(7.5rem);
+        opacity: 1;
+    }
+    40%{
+        transform: translateY(1rem) translateX(10rem);
+        opacity: 1;
+    }
+    50%{
+        transform: translateY(0rem) translateX(12.5rem);
+        opacity: 1;
+    }
+    60%{
+        transform: translateY(1rem) translateX(15rem);
+        opacity: 1;
+    }
+    70%{
+        transform: translateY(0rem) translateX(17.5rem);
+        opacity: 1;
+    }
+    80%{
+        transform: translateY(1rem) translateX(20rem);
+        opacity: 1;
+    }
+    90%{
+        transform: translateY(0rem) translateX(22.5rem);
+        opacity: 0.8;
+    }
+    100%{
+        transform: translateY(1rem) translateX(25rem);
+        opacity: 0.5;
+    }
+    
+}
+
+small{
+    display: none;
+}
+
+/* resgiterform ------------------------------------------------------------------------------------------*/
+
+
+footer{
+    background-color: #6d7f50;
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: white;
+}
+
+footer h3{
+    font-size: 2.5rem;
+    margin-bottom: 1.7rem;
+}
+
+.footer_links{
+    padding: 4rem 3rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+
+
+.footer_links p{
+    padding: 0rem !important;
+    text-align: left !important;
+    font-size: 1.8rem !important;
+    line-height: 2rem !important;
+}
+
+
+
+footer img{
+    width: 3rem !important;
+    height: 3rem !important;
+    object-fit: cover;
+    margin: 1.5rem 1rem 0rem 0rem;
+}
+
+
+footer a{
+    color: white;
+    font-weight: 100;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+}
+
+.image_links_a a{
+    display: inline !important;
+}
+
+.links_footer_block a{
+    display: block;
+}
+
+footer h5{
+    font-weight: 300;
+    margin-top: 1rem;
+    font-size:1.5rem;
+}
+
+
+footer p:last-of-type{
+    padding: 1.5rem 0rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+/* Desktop design-==========================================================================---------------------------------------------------------------------------------------------------- */
+
+
+
+@media (min-width:1024px) {
+
+   
+    header{
+        margin: 1rem 5rem;
+        
+    }
+
+    nav{
+        display: flex;
+        align-items: baseline;
+        justify-content: space-around;
+    }
+
+    nav div:first-child{
+        flex: 1;
+    }
+
+    header h3{
+        font-size: 3rem;
+    }
+
+    .material-symbols-outlined{
+        display: none !important;
+    }
+
+    .nav_bar_a_desktop{
+        display: inline !important;
+    }
+
+    .nav_bar_a_desktop a{
+        background-color: white;
+        color:black;
+        font-size: 1.2rem;
+       
+    }
+
+
+    .nav_bar_a_desktop a:last-child{
+        margin-right: 5rem;
+    }
+
+    .nav_bar_a_desktop a:focus{
+        color: #6d7f50;
+        text-decoration: underline;
+        border: none !important;
+        outline: none !important;
+    }
+
+    .nav_bar_a_desktop a:hover{
+        color: #6d7f50;
+        text-decoration: underline;   
+    }
+   
+    .nav_bar_side a{
+        font-size: 1.2rem;
+        padding: 0.6rem 2rem 0.4rem 2rem;
+    } 
+
+    /* header navigation-------------------------------------------------------------------------- */
+
+    .header_section{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        
+        border-radius: 1rem;
+        padding: 5rem 0rem 0rem 0rem !important;
+    }
+
+    .header_section_words{
+        margin-left: 12rem;
+        margin-top: 3rem;
+        width: 25rem;
+    }
+
+    .header_section_words h4{
+        line-height:2rem;
+        font-size: 1.7rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .header_section img{
+        animation: none;
+        align-items:baseline;
+        width: 28rem;
+        height: 20rem;
+    }
+
+    .header_section_words p{
+        margin-bottom: 1.5rem;
+        line-height: 1.2rem;
+    }
+
+    .header_section_words button{
+        font-size: 0.7rem;
+        border: 0.1rem solid white;
+        padding: 0.5rem 1rem 0.2rem 1rem;
+        margin-right: 1.5rem;
+        font-weight: 500;
+    }
+
+    .header_section_words button:hover{
+        background-color: #705ded;
+        color: white;
+        border: 0.1rem solid white;
+    }
+
+    .header_section_words button:last-of-type:hover{
+        background-color: white;
+        color: #705ded;
+        
+    }
+
+    .header_section div img {
+        vertical-align: top;
+    }
+    /* courses section-------------------------------------------------------- */
+
+    div img{
+        vertical-align: top;
+    }
+    .slied_scroll{
+        margin-left: 7rem;
+        gap: 2rem;
+    }
+    .courses_offered > p{
+        font-size: 1rem !important;
+    }
+
+    .course_slides  div:first-of-type{
+        margin: 0 !important;
+    }
+    .course_slides img{
+        border-top-left-radius: 0.8rem;
+        border-top-right-radius: 0.8rem;
+        width: 25rem;
+        height: 15rem;
+    }
+
+    .course_slides{
+        width: 26rem;
+        border-radius: 1rem;
+    }
+
+    .start_rating{
+        font-size: 1.7rem !important;
+    }
+
+    .rating_with_rate span{
+        font-size: 1rem;
+    }
+
+    .Rate_In_dollar span{
+     padding: 0.5rem 2rem 0rem 2rem;
+    }
+
+    .course_slides > div{
+        margin: 0rem 1rem;
+    }
+
+    .course_slides p{
+        line-height: 2rem;
+    }
+
+    .sub_heading{
+        font-size: 1rem;
+    }
+
+    .review_images{
+        margin: 1rem 0rem 1rem 2rem;
+
+    }
+
+    .review_images img{
+        width: 3rem;
+        height: 3rem;
+        margin-left: -2rem;
+    }
+
+    .review_images p{
+        font-size: 1rem !important;
+    }
+
+    .review_images button{
+        font-size: 0.7rem;
+        padding: 1rem 2rem 0.5rem 2rem;
+    }
+
+    .review_images button:hover{
+        background-color: white;
+        color: #6d7f50;
+        border: 0.1rem solid #6d7f50;
+    }
+
+
+    /* -----------------------------------------------------------------------------------------------------aboutn section */
+
+    .About_section{
+        margin-left: 7rem;
+    }
+    .About_section h4{
+        margin-bottom: 0rem;
+        
+    }
+
+    .About_section p{
+        margin-bottom: 0.5rem;
+    }
+
+    .About_section p:last-of-type{
+        margin-bottom: 1.5rem;
+    }
+
+    .About_section button{
+        font-size: 1rem;
+    }
+
+    .About_section button:hover{
+        background-color: white;
+        color: #6d7f50;
+        border: 0.1rem solid #6d7f50;
+    }
+
+
+    .About_section_div{
+        
+        justify-content: space-around;
+    }
+
+    .About_section_div p{
+        padding: 1rem 0rem;
+        font-size: 1.7rem;
+    }
+
+
+    /* testimonial section----------------------------------------------------------------------------------------- */
+
+    .testimonial_section{
+        padding-top: 5rem;
+    }
+
+    .review_of_students{
+        margin: 5rem 5rem;
+        align-items: center;
+    }
+
+    .review_of_students p{
+        font-size: 1.3rem;
+    }
+
+    .review_of_students .start_rating{
+        padding-top: 1rem;
+        line-height: 0rem;
+    }
+
+    /* regiterimg form----------------------------------------------------------------------------------------------------- */
+
+    .register_form_section p{
+        font-size: 1.2rem !important;
+    }
+
+    input[type]{
+        border: 0.15rem solid #6d7f50;
+    }
+
+    input[type]::placeholder{
+        font-size: 1rem;
+    }
+
+    .form_submit_btn_image {
+        width: 55rem;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+
+ input[type=submit]{
+        vertical-align: top;
+        font-size: 1rem;
+        width: 10rem;
+        padding:0.6rem 0rem 0rem 0rem;
+        margin: 0rem;
+    }
+}
